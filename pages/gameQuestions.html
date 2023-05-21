@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GAME QUESTIONS</title>
+    <link rel="stylesheet" href="/styles/gameQuestions.css" />
+    <title>PREGUNTAS</title>
   </head>
+
   <body>
     <header>
-      <h1>ANSWER AND WIN</h1>
-      <nav id="menu">
+      <h1 id="title-pag">ADIVINA</h1>
+      <nav id="navbar" name="navbar">
         <ul>
           <li>
             <a href="./../index.html">Home</a>
@@ -23,7 +25,25 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+
+    <main>
+      <section id="juegoPreguntas" name="juegoPreguntas">
+        <article id="pregunta">
+          <p>
+            ¿Cuál de los siguientes animes presenta a los personajes Monkey D.
+            Luffy, Roronoa Zoro y Nami en su tripulación?
+          </p>
+        </article>
+        <article id="respuestas">
+          <ul id="lista-respuestas">
+            <li><button class="respuesta-1">Naruto</button></li>
+            <li><button class="respuesta-2">One Piece</button></li>
+            <li><button class="respuesta-3">My Hero Academia</button></li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
     <footer></footer>
     <script src="/scripts/gameQuestions.js"></script>
   </body>

@@ -4,6 +4,8 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: #171717;
     color: #ffffffa9;
     font-family: monospace;
