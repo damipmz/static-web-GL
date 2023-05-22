@@ -1,12 +1,31 @@
+/* Estilos compartidos por todos las paginas */
 * {
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+img {
+    max-width: max-content;
+}
+
+footer{
+background-color: #171717;
+
+}
+
+
+
+/* Css del index*/
+
+#body-index{
     display: flex;
     flex-direction: column;
-    background-color: #171717;
+    background-color: #414141;
     color: #ffffffa9;
     font-family: monospace;
 }
+
+
+
+
+
