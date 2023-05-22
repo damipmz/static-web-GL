@@ -1,31 +1,115 @@
 /* Estilos compartidos por todos las paginas */
-* {
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --color-fonts-cyan:#3DE5FE;
+    --color-fonts-pink:#E305CD;
+    --color-font-violet:#20203F;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+* ::after * ::before * {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 img {
-    max-width: max-content;
+    max-width: 100%;
 }
 
+
+/* Body */
+
+.body{
+    background-color: #414141;
+}
+
+/* Header*/
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* NavBar*/
+
+.nav-bar{
+    background-color: #a1a1a1;
+   
+}
+
+/* Main */
+
+.main{
+    background-color: #a1a1a1;
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/*Footer*/
 footer{
 background-color: #171717;
-
+color: #fafafa;
 }
 
 
 
 /* Css del index*/
 
-#body-index{
+/* Header*/
+
+.animate__heartBeat {
+    font-family: 'Bangers', cursive;
+    color: white;
+    filter: drop-shadow(1px 1px 0.1px var(--color-fonts-pink));
+    font-size: 5rem;
+}
+
+/* Main*/
+
+#body-main{
     display: flex;
     flex-direction: column;
+    text-align: center;
     background-color: #414141;
-    color: #ffffffa9;
-    font-family: monospace;
+    color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-evenly;
+    text-align: center;
+    text-justify:auto;
 }
 
 
+.button-link {
+    width: 250px;
+    height: 50px;
+    background-color: var(--color-font-violet);
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem;
+}
 
+#button-game-images{
+    border:1px solid var(--color-fonts-pink);
+    color: var(--color-fonts-cyan);
+}
+
+#button-game-questions{
+    border: 1px solid var(--color-fonts-cyan);
+    color: var(--color-fonts-pink);
+}
 
 
