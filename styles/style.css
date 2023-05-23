@@ -29,6 +29,14 @@ img {
   max-width: 100%;
 }
 
+/*Edito el estilo de las respuestas*/
+.answer{
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #fafafa;
+}
+
 /* Body */
 
 /* Header*/
@@ -37,30 +45,44 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 10%;
 }
 
-/* NavBar*/
 
-.nav-bar {
-  background-color: #a1a1a1;
-}
+.animate__heartBeat {
+    font-family: "Bangers", cursive;
+    color: white;
+    filter: drop-shadow(1px 1px 0.1px var(--color-fonts-pink));
+    font-size: 5rem;
+    font-weight: normal;
+    margin: 0;
+  }
+
+
+
 
 /* Main */
+.main {
+    height: 84%;
+  
+  }
 
 
 .subtitle {
   font-size: 2rem;
   font-weight: bold;
+  margin: 0;
 }
 
 /*Footer*/
 .footer {
   background-color: rgba(0, 0, 0, 0.8);
   color: #fafafa;
-    width: 100%;
+  width: 100%;
   position: absolute;
   bottom: 0;
   margin-left: 0;
+  height: 6%;
 }
 
 .footer ul {
@@ -71,6 +93,8 @@ img {
   justify-content: space-evenly;
   align-items: center;
 }
+
+
 
 /* Css del index*/
 
@@ -83,26 +107,28 @@ img {
 
 /* Header*/
 
-.animate__heartBeat {
-  font-family: "Bangers", cursive;
-  color: white;
-  filter: drop-shadow(1px 1px 0.1px var(--color-fonts-pink));
-  font-size: 5rem;
-}
+
 
 /* Main*/
-
-#index-main {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: #fafafa;
-  justify-content: space-evenly;
-  text-align: center;
-  text-justify: auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+#index-main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75% 1fr;
+    text-align: center;
+    color: #fafafa;
+    
 }
+/* Games*/
+.games {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1rem;
+    justify-content: center;
+    gap: 20px;
+   
+}
+
 
 .button-link {
   width: 250px;
@@ -113,6 +139,7 @@ img {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1rem;
+  
 }
 
 #button-game-images {
@@ -123,4 +150,21 @@ img {
 #button-game-questions {
   border: 1px solid var(--color-fonts-cyan);
   color: var(--color-fonts-pink);
+}
+
+/* Curiosities*/
+
+.curiosities {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+}
+.curiosities h3{
+    text-align: left;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.curiosity{
+    border: 1px solid white;
+    border-radius:10px;
 }
