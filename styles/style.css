@@ -1,4 +1,4 @@
-/* Estilos compartidos por todos las paginas */
+/* Estilos compartidos por todas las paginas */
 
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 /* Roboto */
@@ -77,8 +77,10 @@ img {
 #index-body {
   background: rgba(0, 0, 0, 0.8) url(/assets/backgroundIndex.jpg);
   background-blend-mode: darken;
-  background-size: cover;
+   background-size: cover;
+  background-size: 100% 100%; /* Estire la imagen para que ocupe toda la pantalla, a cambiar en futuro, queda mal */
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Header*/

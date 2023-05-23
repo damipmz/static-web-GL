@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/gameQuestions.css" />
-    <title>PREGUNTAS</title>
-  </head>
 
-  <body>
-    <header>
-      <h1 id="title-pag">ADIVINA</h1>
-      <nav id="navbar" name="navbar">
-        <ul>
-          <li>
-            <a href="./../index.html">Home</a>
-          </li>
-          <li>
-            <a href="./gameImages.html">Game images</a>
-          </li>
-          <li>
-            <a href="./gameQuestions.html">Game questions</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/gameQuestions.css" />
+  <!-- Link de la biblioteca usada para la animacion -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <title>Juego de preguntas</title>
+</head>
 
-    <main class="main">
-      <section id="juegoPreguntas" name="juegoPreguntas">
-        <article id="pregunta">
-          <p>
-            ¿Cuál de los siguientes animes presenta a los personajes Monkey D.
-            Luffy, Roronoa Zoro y Nami en su tripulación?
-          </p>
-        </article>
-        <article id="respuestas">
-          <ul id="lista-respuestas">
-            <li><button class="respuesta-1">Naruto</button></li>
-            <li><button class="respuesta-2">One Piece</button></li>
-            <li><button class="respuesta-3">My Hero Academia</button></li>
-          </ul>
-        </article>
-      </section>
-    </main>
-
-    <footer class="footer">
+<body class="body" id="index-body">
+  <header class="header">
+    <h1 class="tittleQuestions___heartBeat">¿Podras responder?</h1>
+    <nav id="navbar" name="navbar">
       <ul>
-        <li>LiknedIn</li>
-        <li>GitHub</li>
+        <li>
+          <a href="./../index.html">Home</a>
+        </li>
+        <li>
+          <a href="./gameImages.html">Game images</a>
+        </li>
       </ul>
-    </footer>
-    <script src="/scripts/gameQuestions.js"></script>
-  </body>
+    </nav>
+  </header>
+
+  <main class="main" id="gameQuestions-main">
+    <section id="juegoPreguntas" name="juegoPreguntas">
+      <article id="pregunta">
+        <p>
+          ¿Cuál de los siguientes animes presenta a los personajes Monkey D.
+          Luffy, Roronoa Zoro y Nami en su tripulación?
+        </p>
+      </article>
+      <article id="anwsers">
+        <ul id="list-answers">
+          <li><button class="answer-1">Naruto</button></li>
+          <li><button class="answer-2">One Piece</button></li>
+          <li><button class="answer-3">My Hero Academia</button></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <ul>
+      <li>LiknedIn</li>
+      <li>GitHub</li>
+    </ul>
+  </footer>
+
+  <script src="/scripts/gameQuestions.js"></script>
+
+</body>
+
 </html>

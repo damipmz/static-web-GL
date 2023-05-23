@@ -1,8 +1,21 @@
+/* Estilos compartidos por todas las paginas */
+
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+/* Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+    --color-fonts-cyan: #3de5fe;
+    --color-fonts-pink: #e305cd;
+    --color-font-violet: #20203f;
+}
+
 * {
     padding: 0;
     box-sizing: border-box;
 }
 
+/* body */
 
 body {
     color: #fafafa;
@@ -11,10 +24,22 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    font-family: monospace;
     text-align: center;
+    font-family: "Roboto", sans-serif;
 
 }
+
+#index-body {
+    background: rgba(0, 0, 0, 0.8) url(/assets/backgroundGameQuestions.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; /* Ajuste la posición del fondo al centro */
+    height: 100vh; 
+    width: 100%;
+}
+
+/* Respuestas */
 
 ul {
     list-style-type: none;
@@ -32,20 +57,28 @@ button {
     background-color: transparent;
 }
 
-#navbar {
-    text-align: left;
-    width: 200px;
-    /* Ancho de la barra dede fondo */
-    padding: 20px;
-    /* Espacio interno */
+/* Header */
+
+.tittleQuestions___heartBeat {
+    font-family: "Bangers", cursive;
+    color: white;
+    filter: drop-shadow(1px 1px 0.1px var(--color-fonts-pink));
+    font-size: 5rem;
 }
 
-#navbar a {
-    text-decoration: none;
-    /*saco el subrayado*/
-    margin-bottom: 10px;
+ /* Main */
+
+ #index-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     color: #fafafa;
-}
+    justify-content: space-evenly;
+    text-align: center;
+    text-justify: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 
 #juegoPreguntas {
     background-color: transparent;
@@ -65,3 +98,40 @@ button {
     background-color: transparent;
     margin: 3%;
 }
+
+/* navbar */
+
+#navbar {
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    width: 200px;
+    /* Ancho de la barra dede fondo */
+    padding: 20px;
+    /* Espacio interno */
+}
+
+#navbar a {
+    text-decoration: none;
+    /*saco el subrayado*/
+    margin-bottom: 10px;
+    color: #fafafa;
+}
+
+/*Footer*/
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fafafa;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-left: 0;
+  }
+  
+  .footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    list-style-position: outside;
+    justify-content: space-evenly;
+    align-items: center;
+  }
