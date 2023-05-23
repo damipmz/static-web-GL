@@ -3,10 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 /* Roboto */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 :root {
-  --color-fonts-cyan: #3de5fe;
-  --color-fonts-pink: #e305cd;
-  --color-font-violet: #20203f;
+  --color-fonts-1: #EEEEEE;
+  --color-fonts-2: #FFD369;
+  --color-fonts-3: #393E46;
 }
 
 html {
@@ -45,14 +46,16 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 10%;
+  height: 12%;
+  justify-content: center;
+  
 }
 
 
 .animate__heartBeat {
     font-family: "Bangers", cursive;
-    color: white;
-    filter: drop-shadow(1px 1px 0.1px var(--color-fonts-pink));
+    color: var(--color-fonts-2);
+    filter: drop-shadow(1px 1px 0.1px var(--color-fonts-1));
     font-size: 5rem;
     font-weight: normal;
     margin: 0;
@@ -63,7 +66,7 @@ img {
 
 /* Main */
 .main {
-    height: 84%;
+    height: 82%;
   
   }
 
@@ -133,24 +136,26 @@ img {
 .button-link {
   width: 250px;
   height: 50px;
-  background-color: var(--color-font-violet);
+  background-color: var(--color-fonts-3);
   border-radius: 10px;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1rem;
-  
 }
 
+
 #button-game-images {
-  border: 1px solid var(--color-fonts-pink);
-  color: var(--color-fonts-cyan);
+  border: 1px solid var(--color-fonts-2);
+  color: var(--color-fonts-1);
 }
 
 #button-game-questions {
-  border: 1px solid var(--color-fonts-cyan);
-  color: var(--color-fonts-pink);
+  border: 1px solid var(--color-fonts-1);
+  color: var(--color-fonts-2);
 }
+
+
 
 /* Curiosities*/
 
@@ -168,3 +173,4 @@ img {
     border: 1px solid white;
     border-radius:10px;
 }
+
