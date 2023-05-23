@@ -1,115 +1,126 @@
 /* Estilos compartidos por todos las paginas */
 
-
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 /* Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-:root{
-    --color-fonts-cyan:#3DE5FE;
-    --color-fonts-pink:#E305CD;
-    --color-font-violet:#20203F;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  --color-fonts-cyan: #3de5fe;
+  --color-fonts-pink: #e305cd;
+  --color-font-violet: #20203f;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 * ::after * ::before * {
-    padding: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
     margin: 0;
-    box-sizing: border-box;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
-
 
 /* Body */
 
-.body{
-    background-color: #414141;
-}
-
 /* Header*/
 
-.header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* NavBar*/
 
-.nav-bar{
-    background-color: #a1a1a1;
-   
+.nav-bar {
+  background-color: #a1a1a1;
 }
 
 /* Main */
 
-.main{
-    background-color: #a1a1a1;
-}
 
 .subtitle {
-    font-size: 2rem;
-    font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 /*Footer*/
-footer{
-background-color: #171717;
-color: #fafafa;
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fafafa;
+    width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-left: 0;
 }
 
-
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  list-style-position: outside;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
 /* Css del index*/
+
+#index-body {
+  background: rgba(0, 0, 0, 0.8) url(/assets/backgroundIndex.jpg);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 /* Header*/
 
 .animate__heartBeat {
-    font-family: 'Bangers', cursive;
-    color: white;
-    filter: drop-shadow(1px 1px 0.1px var(--color-fonts-pink));
-    font-size: 5rem;
+  font-family: "Bangers", cursive;
+  color: white;
+  filter: drop-shadow(1px 1px 0.1px var(--color-fonts-pink));
+  font-size: 5rem;
 }
 
 /* Main*/
 
-#body-main{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: #414141;
-    color: #fafafa;
-    font-family: 'Roboto', sans-serif;
-    justify-content: space-evenly;
-    text-align: center;
-    text-justify:auto;
+#index-main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fafafa;
+  justify-content: space-evenly;
+  text-align: center;
+  text-justify: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
-
 
 .button-link {
-    width: 250px;
-    height: 50px;
-    background-color: var(--color-font-violet);
-    border-radius: 10px;
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1rem;
+  width: 250px;
+  height: 50px;
+  background-color: var(--color-font-violet);
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
-#button-game-images{
-    border:1px solid var(--color-fonts-pink);
-    color: var(--color-fonts-cyan);
+#button-game-images {
+  border: 1px solid var(--color-fonts-pink);
+  color: var(--color-fonts-cyan);
 }
 
-#button-game-questions{
-    border: 1px solid var(--color-fonts-cyan);
-    color: var(--color-fonts-pink);
+#button-game-questions {
+  border: 1px solid var(--color-fonts-cyan);
+  color: var(--color-fonts-pink);
 }
-
-
