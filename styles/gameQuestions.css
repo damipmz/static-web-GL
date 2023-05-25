@@ -47,6 +47,13 @@ button {
     width: 25em;
     height: 2.3em;
     background-color: transparent;
+    transition: .5s;
+}
+
+.answer:hover {
+    color: rgb(85, 228, 185);
+    border-color: #e305cd;
+    transform: scale(1.1);
 }
 
 /* Header */
