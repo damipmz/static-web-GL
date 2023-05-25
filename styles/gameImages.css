@@ -1,8 +1,25 @@
 #game-images-body {
-    background-color: aliceblue;
+    background: rgba(0,0,0,0.9)url(/assets/backgroundgameQuestions.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 #game-images-main{
-    background-color: aqua;
+    color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: #fafafa;
 }
 
+
+.question img {
+    height: 100%;
+    width: 100%;
+}
+.subtitle{
+    font-size: 1rem;
+}

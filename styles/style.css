@@ -28,14 +28,24 @@ body {
 
 img {
   max-width: 100%;
+  
 }
 
 /*Edito el estilo de las respuestas*/
 .answer{
     width: 300px;
     height: 50px;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid #fafafa;
+    color: var(--color-fonts-2);
+    
+}
+
+.question{
+  width: 300px;
+  height: 200px;
+  border: 2px solid #fafafa;
+  
 }
 
 /* Body */
@@ -67,7 +77,7 @@ img {
 /* Main */
 .main {
     height: 82%;
-  
+    padding: 1rem;
   }
 
 
@@ -163,6 +173,7 @@ img {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 2rem;
+    font-size: small;
 }
 .curiosities h3{
     text-align: left;
