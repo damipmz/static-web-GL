@@ -41,15 +41,9 @@ body {
 
 /* Respuestas */
 
-ul {
-    list-style-type: none;
-}
-
-li {
-    margin: 1em;
-}
 
 button {
+    margin: 1em;
     color: #fafafa;
     border: 1px solid #fafafa;
     width: 25em;
@@ -61,9 +55,9 @@ button {
 
 .tittleQuestions___heartBeat {
     font-family: "Bangers", cursive;
-    color: white;
-    filter: drop-shadow(1px 1px 0.1px var(--color-fonts-pink));
-    font-size: 5rem;
+    color: rgb(85, 228, 185);
+    filter: drop-shadow(1px 2px 0.1px var(--color-fonts-pink));
+    font-size: 4rem;
 }
 
  /* Main */
@@ -71,6 +65,7 @@ button {
  #index-main {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
     color: #fafafa;
     justify-content: space-evenly;
@@ -80,24 +75,20 @@ button {
     margin-bottom: 2rem;
   }
 
-#juegoPreguntas {
+#gameQuestion {
     background-color: transparent;
     margin: 2em;
     text-align: center;
     width: 400px;
 }
 
-#pregunta {
+#question {
     background-color: transparent;
-    border-radius: 0.5em;
-    border: 2px solid #fafafa;
+    border: 1px solid #fafafa;
     margin: 2em;
+    padding: 2%;
 }
 
-#respuestas {
-    background-color: transparent;
-    margin: 3%;
-}
 
 /* navbar */
 
@@ -118,6 +109,7 @@ button {
 }
 
 /*Footer*/
+
 .footer {
     background-color: rgba(0, 0, 0, 0.8);
     color: #fafafa;
