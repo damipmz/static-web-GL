@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const answer2 = document.getElementById('answer-2-question')
     const answer3 = document.getElementById('answer-3-question')
 
-    
+
 
 })
 
