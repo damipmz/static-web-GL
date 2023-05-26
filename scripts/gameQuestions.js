@@ -21,6 +21,48 @@ window.addEventListener("DOMContentLoaded", () => {
       choices: ["Eren Jaeger", "Levi Ackerman", "Mikasa Ackerman"],
       answer: "Eren Jaeger",
     },
+    {
+      question:
+        '¿En el anime "Attack on Titan", ¿cuál es el nombre del escuadrón de élite que se encarga de enfrentar a los titanes?',
+      choices: ["Escuadrón de Reconocimiento", "Escuadrón de Maniobras Tridimensionales", "Escuadrón de Operaciones Especiales"],
+      answer: "Escuadrón de Reconocimiento",
+    },
+    {
+      question:
+        'En el anime "My Hero Academia", ¿cuál es el nombre del profesor conocido como "All Might"?',
+      choices: ["Izuku Midoriya", "Shoto Todoroki", "Toshinori Yagi"],
+      answer: "Toshinori Yagi",
+    },
+    {
+      question:
+        'En el anime "Demon Slayer: Kimetsu no Yaiba", ¿cuál es el nombre del protagonista que busca vengar a su familia y proteger a su hermana?',
+      choices: ["Tanjiro Kamado", "Zenitsu Agatsuma", "Inosuke Hashibira"],
+      answer: "Tanjiro Kamado",
+    },
+    {
+      question:
+        '¿Cuál es el título del popular anime japonés en el cual el protagonista tiene un cuaderno con poderes?',
+      choices: ["Code Geass", "Tokyo Ghoul", "Death Note"],
+      answer: " Death Note",
+    },
+    {
+      question:
+        'En el anime "Dragon Ball Z", ¿cuál es el nombre del hijo de Goku?',
+      choices: ["Gohan", "Vegeta", "Trunks"],
+      answer: "Gohan",
+    },
+    {
+      question:
+        '¿Cuál es el nombre del protagonista masculino en el anime "My Hero Academia"?',
+      choices: ["Izuku Midoriya", "Shoto Todoroki", "Katsuki Bakugo"],
+      answer: "Izuku Midoriya",
+    },
+    {
+      question:
+        'En el anime "Fullmetal Alchemist: Brotherhood", ¿cuál es el nombre del protagonista principal?',
+      choices: ["Edward Elric", "Roy Mustang", "Alphonse Elric"],
+      answer: "Alphonse Elric",
+    },
   ];
 
 
@@ -49,7 +91,7 @@ window.addEventListener("DOMContentLoaded", () => {
       this.questions = questions;
     }
 
-    //Creo el indice por asi decirlo que lo inicio en 0 para saber cuando empieza el arreglo
+    //Inicializo el indice en 0 para saber cuando empieza el arreglo
     questionIndex = 0;
     score = 0;
 
@@ -97,6 +139,7 @@ window.addEventListener("DOMContentLoaded", () => {
         listOfAnswers.appendChild(button);
       }
     }
+    
   }
 
   const scorePage = (htmlVision, trivia) => {
@@ -116,7 +159,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
   /*Funcion para mostrar el puntaje, creando un h2 que lo carga en el HTML*/
   const showScore = (score) => {
-    const endTrivia = `<h1 class="score-title">SCORE: ${score}</h1>`;
+    const endTrivia = `<h1 class="score-title">TU PUNTAJE ES... </h1>
+                              <h2 class="score-number">${score}</h2>`;
     const elementOfHTMLscore = document.getElementById('gameQuestion');
     elementOfHTMLscore.innerHTML = endTrivia;
   };

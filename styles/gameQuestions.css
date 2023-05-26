@@ -96,14 +96,14 @@ button {
 
 /* estilo para respuesta acertada */
 
-.answer.correctAnswer {
+.correctAnswer {
     background-color: rgba(139, 241, 44, 0.322);
     color: #e305cd;
 }
 
 /* estilo para respuesta incorrecta */
 
-.answer.wrongAnswer {
+.wrongAnswer {
     background-color: rgba(199, 49, 49, 0.322);
     color: #fafafa;
 }
@@ -111,12 +111,24 @@ button {
 /* Puntaje del usuario */
 
 .score-title {
-    margin: 30% ;
-    font-family: "Roboto", sans-serif;
+    letter-spacing: 3px;
+    margin-top: 20% ;
+    font-family: "Bangers";
     color: rgb(40, 230, 173); 
     font-size: 2rem; 
     animation-name: fade-in;
-    animation-duration: 2s; 
+    animation-duration: 1s; 
+  }
+
+  .score-number{
+    font-family: "Roboto", sans-serif;
+    margin-top: 1%;
+    font-size: 3rem;
+    margin: 0;
+    color: #e305cd;
+    mix-blend-mode: screen;
+    animation-name: fade-in;
+    animation-duration: 7s;
   }
   
   @keyframes fade-in {
@@ -124,7 +136,7 @@ button {
       opacity: 0; 
     }
     to {
-      opacity: 1; 
+      opacity: 3; 
     }
   }
 
@@ -134,9 +146,11 @@ button {
     font-family: "Roboto", sans-serif;
     text-align: left;
     width: 200px;
-    /* Ancho de la barra dede fondo */
-    padding: 20px;
-    /* Espacio interno */
+    padding-left: 1em;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    transition: .3s;
+
 }
 
 #navbar a {
@@ -144,6 +158,11 @@ button {
     /*saco el subrayado*/
     margin-bottom: 10px;
     color: #fafafa;
+    
+}
+
+#navbar:hover {
+    transform: scale(1.1);
 }
 
 /*Footer*/
