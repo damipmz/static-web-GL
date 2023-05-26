@@ -105,7 +105,7 @@ window.addEventListener("DOMContentLoaded", () => {
     } else {
       // Cargo las preguntas
       htmlVision.questionsForUser(trivia.getQuestionIndex().text);
-  
+
       // Cargo las opciones y manejo de la elección del usuario
       htmlVision.choicesForUser(trivia.getQuestionIndex().choices, (actualChoice) => {
         trivia.guess(actualChoice); // para la opción elegida por el usuario 
@@ -113,16 +113,13 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     }
   };
-  
+
   /*Funcion para mostrar el puntaje, creando un h2 que lo carga en el HTML*/
   const showScore = (score) => {
     const endTrivia = `<h1 class="score-title">SCORE: ${score}</h1>`;
     const elementOfHTMLscore = document.getElementById('gameQuestion');
     elementOfHTMLscore.innerHTML = endTrivia;
   };
-  
-  
-  /*Funcion para mostrar cantidad de preguntas
 
   /*Funcion para desarrollar la trivia*/
   const developmentOfTrivia = () => {
@@ -136,36 +133,4 @@ window.addEventListener("DOMContentLoaded", () => {
   developmentOfTrivia();
 });
 
-//Arreglo con las preguntas
-/*
-const questionsOfAnime = [
-  "¿Cuál de los siguientes animes presenta a los personajes Monkey D. Luffy, Roronoa Zoro y Nami en su tripulación?",
-  'En el anime "Naruto", ¿cuál es el nombre del mejor amigo y eterno rival de Naruto Uzumaki?',
-  '¿Cuál es el nombre del protagonista del anime "Attack on Titan" ("Shingeki no Kyojin" en japonés)?',
-];
- 
 
-//Arreglo con las informacion de los indices de las respuestas correctas del Arreglo optionsToChoose
-/*const correctAnswer = [1, 0, 0];
-
-//Opciones que le apareceran al usuario
-const optionsToChoose = [
-  ["Naruto", "One Piece", "One Punch Man"],
-  ["Sasuke Uchiha", "Kakashi Hatake", "Jiraiya"],
-  ["Eren Jaeger", "Levi Ackerman", "Mikasa Ackerman"],
-];
-
-const pushQuestion = () => {
-  let actualPos = 0;
-  document.getElementById('question').innerText = questionsOfAnime[actualPos];
-  document.getElementById('answer-1').innerText = optionsToChoose[actualPos][0];
-  document.getElementById('answer-2').innerText = optionsToChoose[actualPos][1];
-  document.getElementById('answer-3').innerText = optionsToChoose[actualPos][2];
-};
-
-pushQuestion ();
-
-const checkAnswer = (Answer, ) => {
-
-}
-*/
