@@ -111,7 +111,6 @@ button {
 /* Puntaje del usuario */
 
 .score-title {
-    border: 2px solid #e305cd5b;
     margin: 30% ;
     font-family: "Roboto", sans-serif;
     color: rgb(40, 230, 173); 
