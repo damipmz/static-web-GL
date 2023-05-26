@@ -32,9 +32,10 @@ body {
     background: rgba(0, 0, 0, 0.8) url(/assets/backgroundGameQuestions.jpg);
     background-blend-mode: darken;
     background-size: cover;
-    background-repeat: no-repeat; 
-    background-position: center; /* Ajuste la posición del fondo al centro */
-    height: 100vh; 
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Ajuste la posición del fondo al centro */
+    height: 100vh;
     width: 100%;
 }
 
@@ -51,9 +52,9 @@ button {
 }
 
 .answer:hover {
-    color: rgb(85, 228, 185);
     border-color: #e305cd;
     transform: scale(1.1);
+
 }
 
 /* Header */
@@ -65,21 +66,20 @@ button {
     font-size: 4rem;
 }
 
- /* Main */
+/* Main */
 
- #index-main {
+#index-main {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    text-align: center;
     color: #fafafa;
     justify-content: space-evenly;
-    text-align: center;
-    text-justify: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
-  }
+}
 
+/* Juego en si */
 #gameQuestion {
     background-color: transparent;
     margin: 2em;
@@ -94,6 +94,40 @@ button {
     padding: 2%;
 }
 
+/* estilo para respuesta acertada */
+
+.answer.correctAnswer {
+    background-color: rgba(139, 241, 44, 0.322);
+    color: #e305cd;
+}
+
+/* estilo para respuesta incorrecta */
+
+.answer.wrongAnswer {
+    background-color: rgba(199, 49, 49, 0.322);
+    color: #fafafa;
+}
+
+/* Puntaje del usuario */
+
+.score-title {
+    border: 2px solid #e305cd5b;
+    margin: 30% ;
+    font-family: "Roboto", sans-serif;
+    color: rgb(40, 230, 173); 
+    font-size: 2rem; 
+    animation-name: fade-in;
+    animation-duration: 2s; 
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0; 
+    }
+    to {
+      opacity: 1; 
+    }
+  }
 
 /* navbar */
 
@@ -122,25 +156,13 @@ button {
     position: absolute;
     bottom: 0;
     margin-left: 0;
-  }
-  
-  .footer ul {
+}
+
+.footer ul {
     display: flex;
     flex-direction: row;
     list-style: none;
     list-style-position: outside;
     justify-content: space-evenly;
     align-items: center;
-  }
-
-  /* estilo para respuesta acertada */
-
-  .answer .correctAnswer {
-    background-color: rgb(140, 241, 44);
-  }
-
-  /* estilo para respuesta incorrecta */
-
-  .answer .wrongAnswer {
-    background-color: rgb(207, 97, 97); 
-  }
+}
