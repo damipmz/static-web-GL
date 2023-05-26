@@ -19,6 +19,7 @@
 body {
     color: #fafafa;
     background-color: #161616;
+    justify-content: center;
     align-content: center;
     align-items: center;
     display: flex;
@@ -33,10 +34,10 @@ body {
     background-blend-mode: darken;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    /* Ajuste la posición del fondo al centro */
+    background-position: center; /* Ajuste la posición del fondo al centro */ 
     height: 100vh;
     width: 100%;
+    
 }
 
 /* Respuestas */
@@ -59,11 +60,44 @@ button {
 
 /* Header */
 
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
 .tittleQuestions___heartBeat {
     font-family: "Bangers", cursive;
     color: rgb(85, 228, 185);
     filter: drop-shadow(1px 2px 0.1px var(--color-fonts-pink));
     font-size: 4rem;
+    
+}
+
+/* navbar */
+
+#navbar {
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    width: 200px;
+    padding-left: 1em;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    transition: .3s;
+
+}
+
+#navbar a {
+    text-decoration: none;
+    /*saco el subrayado*/
+    margin-bottom: 10px;
+    color: #fafafa;
+    
+}
+
+#navbar:hover {
+    transform: scale(1.1);
 }
 
 /* Main */
@@ -75,7 +109,8 @@ button {
     flex-wrap: wrap;
     color: #fafafa;
     justify-content: space-evenly;
-    margin-top: 2rem;
+    /*margin-top: 100px;*/
+    margin-top: 100rem;
     margin-bottom: 2rem;
 }
 
@@ -140,30 +175,7 @@ button {
     }
   }
 
-/* navbar */
 
-#navbar {
-    font-family: "Roboto", sans-serif;
-    text-align: left;
-    width: 200px;
-    padding-left: 1em;
-    animation-name: fade-in;
-    animation-duration: 2s;
-    transition: .3s;
-
-}
-
-#navbar a {
-    text-decoration: none;
-    /*saco el subrayado*/
-    margin-bottom: 10px;
-    color: #fafafa;
-    
-}
-
-#navbar:hover {
-    transform: scale(1.1);
-}
 
 /*Footer*/
 
