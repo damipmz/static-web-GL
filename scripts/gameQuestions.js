@@ -143,11 +143,12 @@ window.addEventListener("DOMContentLoaded", () => {
         button.className = "answer";
         //devuelvo el texto del boton
         button.addEventListener("click", () => callback(choices[i]));
-
+               
         listOfAnswers.appendChild(button);
       }
     }
   }
+
 
   const scorePage = (htmlVision, trivia) => {
     if (trivia.endOfTrivia()) {
@@ -188,6 +189,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const saveScoreLocalStorage = (score) => {
     localStorage.setItem("PUNTAJE", JSON.stringify(score));
   };
+
 
   developmentOfTrivia();
 });
