@@ -11,7 +11,7 @@
 
 * {
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 /* body */
@@ -20,7 +20,6 @@ body {
     color: #fafafa;
     background-color: #161616;
     justify-content: center;
-    align-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -34,10 +33,12 @@ body {
     background-blend-mode: darken;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; /* Ajuste la posición del fondo al centro */ 
+    background-position: center;
     height: 100vh;
     width: 100%;
-    
+    overflow: hidden;
+    margin-left: auto;
+
 }
 
 /* Respuestas */
@@ -56,7 +57,7 @@ button {
 .answer:hover {
     border-color: #e305cd;
     transform: scale(1.1);
-    
+
 }
 
 /* Header */
@@ -73,7 +74,7 @@ header {
     color: rgb(85, 228, 185);
     filter: drop-shadow(1px 2px 0.1px var(--color-fonts-pink));
     font-size: 4rem;
-    
+
 }
 
 /* navbar */
@@ -87,16 +88,12 @@ header {
     animation-duration: 2s;
     transition: .3s;
     font-weight: bold;
-
 }
 
 #navbar a {
     text-decoration: none;
-    /*saco el subrayado*/
     margin-bottom: 10px;
     color: #fafafa;
-
-    
 }
 
 #navbar:hover {
@@ -112,12 +109,12 @@ header {
     flex-wrap: wrap;
     color: #fafafa;
     justify-content: space-evenly;
-    /*margin-top: 100px;*/
     margin-top: 100rem;
     margin-bottom: 2rem;
 }
 
 /* Juego en si */
+
 #gameQuestion {
     background-color: transparent;
     margin: 2em;
@@ -151,15 +148,15 @@ header {
 
 .score-title {
     letter-spacing: 3px;
-    margin-top: 20% ;
+    margin-top: 20%;
     font-family: "Bangers";
-    color: rgb(40, 230, 173); 
-    font-size: 2rem; 
+    color: rgb(40, 230, 173);
+    font-size: 2rem;
     animation-name: fade-in;
-    animation-duration: 1s; 
-  }
+    animation-duration: 1s;
+}
 
-  .score-number{
+.score-number {
     font-family: "Roboto", sans-serif;
     margin-top: 1%;
     font-size: 3rem;
@@ -168,18 +165,17 @@ header {
     mix-blend-mode: screen;
     animation-name: fade-in;
     animation-duration: 7s;
-  }
-  
-  @keyframes fade-in {
+}
+
+@keyframes fade-in {
     from {
-      opacity: 0; 
+        opacity: 0;
     }
+
     to {
-      opacity: 3; 
+        opacity: 3;
     }
-  }
-
-
+}
 
 /*Footer*/
 
@@ -193,9 +189,32 @@ header {
 
 .footer ul {
     display: flex;
-    flex-direction: row;
     list-style: none;
     list-style-position: outside;
     justify-content: space-evenly;
     align-items: center;
+
+}
+
+.footer a {
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    /*background-image: url(/assets/logos/GitHub-logo.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+}
+.name-icon{
+   
+}
+.linkedin-icon {
+    background-image: url(/assets/logos/LinkedIn-logo.png);
+}
+
+.github-icon {
+    background-image: url(/assets/logos/GitHub-logo.png);
 }

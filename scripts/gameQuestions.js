@@ -143,7 +143,7 @@ window.addEventListener("DOMContentLoaded", () => {
         button.className = "answer";
         //devuelvo el texto del boton
         button.addEventListener("click", () => callback(choices[i]));
-               
+
         listOfAnswers.appendChild(button);
       }
     }
