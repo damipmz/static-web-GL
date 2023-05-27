@@ -24,7 +24,11 @@ window.addEventListener("DOMContentLoaded", () => {
     {
       question:
         '¿En el anime "Attack on Titan", ¿cuál es el nombre del escuadrón de élite que se encarga de enfrentar a los titanes?',
-      choices: ["Escuadrón de Reconocimiento", "Escuadrón de Maniobras Tridimensionales", "Escuadrón de Operaciones Especiales"],
+      choices: [
+        "Escuadrón de Reconocimiento",
+        "Escuadrón de Maniobras Tridimensionales",
+        "Escuadrón de Operaciones Especiales",
+      ],
       answer: "Escuadrón de Reconocimiento",
     },
     {
@@ -41,7 +45,7 @@ window.addEventListener("DOMContentLoaded", () => {
     },
     {
       question:
-        '¿Cuál es el título del popular anime japonés en el cual el protagonista tiene un cuaderno con poderes?',
+        "¿Cuál es el título del popular anime japonés en el cual el protagonista tiene un cuaderno con poderes?",
       choices: ["Code Geass", "Tokyo Ghoul", "Death Note"],
       answer: " Death Note",
     },
@@ -65,7 +69,6 @@ window.addEventListener("DOMContentLoaded", () => {
     },
   ];
 
-
   //Defino la clase
   class Question {
     constructor(text, choices, answer) {
@@ -84,6 +87,9 @@ window.addEventListener("DOMContentLoaded", () => {
     (question) =>
       new Question(question.question, question.choices, question.answer)
   );
+
+  /*Variable para guardar el puntaje en Local Storage*/
+  let scoreOfUser = 0;
 
   class Trivia {
     //le paso las opciones al constructor
@@ -110,7 +116,9 @@ window.addEventListener("DOMContentLoaded", () => {
       console.log(answer);
       if (this.getQuestionIndex().correctAnswer(answer)) {
         this.score++; //aumento el score
+        scoreOfUser = this.score;
       }
+
       return this.questionIndex++;
     }
   }
@@ -127,7 +135,7 @@ window.addEventListener("DOMContentLoaded", () => {
     choicesForUser(choices, callback) {
       const listOfAnswers = document.getElementById("list-answers");
       // limpio el html para que no me acumule las respuestas cada vez que selecciono
-      listOfAnswers.innerText = '';
+      listOfAnswers.innerText = "";
 
       for (let i = 0; i < choices.length; i++) {
         const button = document.createElement("button");
@@ -139,7 +147,6 @@ window.addEventListener("DOMContentLoaded", () => {
         listOfAnswers.appendChild(button);
       }
     }
-    
   }
 
   const scorePage = (htmlVision, trivia) => {
@@ -150,10 +157,13 @@ window.addEventListener("DOMContentLoaded", () => {
       htmlVision.questionsForUser(trivia.getQuestionIndex().text);
 
       // Cargo las opciones y manejo de la elección del usuario
-      htmlVision.choicesForUser(trivia.getQuestionIndex().choices, (actualChoice) => {
-        trivia.guess(actualChoice); // para la opción elegida por el usuario 
-        scorePage(htmlVision, trivia); // vuelvo a cargar todo llamando a la función
-      });
+      htmlVision.choicesForUser(
+        trivia.getQuestionIndex().choices,
+        (actualChoice) => {
+          trivia.guess(actualChoice); // para la opción elegida por el usuario
+          scorePage(htmlVision, trivia); // vuelvo a cargar todo llamando a la función
+        }
+      );
     }
   };
 
@@ -161,11 +171,12 @@ window.addEventListener("DOMContentLoaded", () => {
   const showScore = (score) => {
     const endTrivia = `<h1 class="score-title">TU PUNTAJE ES... </h1>
                               <h2 class="score-number">${score}</h2>`;
-    const elementOfHTMLscore = document.getElementById('gameQuestion');
+    const elementOfHTMLscore = document.getElementById("gameQuestion");
     elementOfHTMLscore.innerHTML = endTrivia;
+    saveScoreLocalStorage(scoreOfUser);
   };
 
-  /*Funcion para desarrollar la trivia*/
+  /*Funcion para el desarrollo de la trivia*/
   const developmentOfTrivia = () => {
     const trivia = new Trivia(arrayOfQuestions);
     const htmlVision = new HtmlVision();
@@ -173,8 +184,10 @@ window.addEventListener("DOMContentLoaded", () => {
     scorePage(htmlVision, trivia);
   };
 
-  //Llamo a la funcion
+  /*Funcion para guardar el puntaje en el LocalStorage*/
+  const saveScoreLocalStorage = (score) => {
+    localStorage.setItem("PUNTAJE", JSON.stringify(score));
+  };
+
   developmentOfTrivia();
 });
-
-
