@@ -192,7 +192,6 @@ header {
     list-style-position: outside;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
 .footer a {
@@ -207,9 +206,7 @@ header {
     background-size: cover;
     vertical-align: middle;
 }
-.name-icon{
-   
-}
+
 .linkedin-icon {
     background-image: url(/assets/logos/LinkedIn-logo.png);
 }
