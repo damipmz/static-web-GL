@@ -8,3 +8,4 @@ buttonGameImages.addEventListener('click',(eventButtonGameImages)=>{
 buttonGameQuestions.addEventListener('click',(eventButtonGameQuestions)=>{
     window.location.assign('pages/gameQuestions.html')
 })
+

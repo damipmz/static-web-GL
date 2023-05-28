@@ -8,24 +8,27 @@
     <link rel="stylesheet" href="/styles/gameImages.css">
     <title> ANIMATE | Quiz de imagenes con tematica anime</title>
   </head>
-  <body id="body-game-images">
-    <header>
-          <p>ANIMATE </p>
+
+  <body class="body" id="game-images-body">
+
+    <header class="header">
+          <p class="animate__heartBeat">ANIMATE</p>
     </header>
 
-    <main class="main">
-      <h1>¿A que anime pertenece la siguiente imagen?</h1>
+    <main class="main" id="game-images-main">
+      <p class="subtitle" id="numberQuestion-image">Pregunta 1</p>
+      <h1 class="subtitle">¿A que anime pertenece la siguiente imagen?</h1>
 
-      <div>
-        <img src="" alt="imagen a adivinar">
+      <div class="question" id="question">
+        <img src="https://pbs.twimg.com/media/CuqyqeyXYAAjuRe.jpg" alt="imagen a adivinar" id="question-image">
       </div>
 
-      <button class="answer" id="answer-1-image" name="answer-1-image">Respuesta 1</button>
+      <button class="answer" id="answer-1-image" name="answer-1-image">Respuesta1</button>
       <button class="answer" id="answer-2-image" name="answer-2-image">Respuesta 2</button>
-      <button class="answer" id="answer-3-image" name="answer-3-image">Repuesta 3</button>
+      <button class="answer" id="answer-3-image" name="answer-3-image">Respuesta 3</button>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="game-images-footer">
       <ul>
         <li>LiknedIn</li>
         <li>GitHub</li>
