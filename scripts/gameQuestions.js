@@ -21,8 +21,53 @@ window.addEventListener("DOMContentLoaded", () => {
       choices: ["Eren Jaeger", "Levi Ackerman", "Mikasa Ackerman"],
       answer: "Eren Jaeger",
     },
+    {
+      question:
+        '¿En el anime "Attack on Titan", ¿cuál es el nombre del escuadrón de élite que se encarga de enfrentar a los titanes?',
+      choices: [
+        "Escuadrón de Reconocimiento",
+        "Escuadrón de Maniobras Tridimensionales",
+        "Escuadrón de Operaciones Especiales",
+      ],
+      answer: "Escuadrón de Reconocimiento",
+    },
+    {
+      question:
+        'En el anime "My Hero Academia", ¿cuál es el nombre del profesor conocido como "All Might"?',
+      choices: ["Izuku Midoriya", "Shoto Todoroki", "Toshinori Yagi"],
+      answer: "Toshinori Yagi",
+    },
+    {
+      question:
+        'En el anime "Demon Slayer: Kimetsu no Yaiba", ¿cuál es el nombre del protagonista que busca vengar a su familia y proteger a su hermana?',
+      choices: ["Tanjiro Kamado", "Zenitsu Agatsuma", "Inosuke Hashibira"],
+      answer: "Tanjiro Kamado",
+    },
+    {
+      question:
+        "¿Cuál es el título del popular anime japonés en el cual el protagonista tiene un cuaderno con poderes?",
+      choices: ["Code Geass", "Tokyo Ghoul", "Death Note"],
+      answer: " Death Note",
+    },
+    {
+      question:
+        'En el anime "Dragon Ball Z", ¿cuál es el nombre del hijo de Goku?',
+      choices: ["Gohan", "Vegeta", "Trunks"],
+      answer: "Gohan",
+    },
+    {
+      question:
+        '¿Cuál es el nombre del protagonista masculino en el anime "My Hero Academia"?',
+      choices: ["Izuku Midoriya", "Shoto Todoroki", "Katsuki Bakugo"],
+      answer: "Izuku Midoriya",
+    },
+    {
+      question:
+        'En el anime "Fullmetal Alchemist: Brotherhood", ¿cuál es el nombre del protagonista principal?',
+      choices: ["Edward Elric", "Roy Mustang", "Alphonse Elric"],
+      answer: "Alphonse Elric",
+    },
   ];
-
 
   //Defino la clase
   class Question {
@@ -43,13 +88,16 @@ window.addEventListener("DOMContentLoaded", () => {
       new Question(question.question, question.choices, question.answer)
   );
 
+  /*Variable para guardar el puntaje en Local Storage*/
+  let scoreOfUser = 0;
+
   class Trivia {
     //le paso las opciones al constructor
     constructor(questions) {
       this.questions = questions;
     }
 
-    //Creo el indice por asi decirlo que lo inicio en 0 para saber cuando empieza el arreglo
+    //Inicializo el indice en 0 para saber cuando empieza el arreglo
     questionIndex = 0;
     score = 0;
 
@@ -68,7 +116,9 @@ window.addEventListener("DOMContentLoaded", () => {
       console.log(answer);
       if (this.getQuestionIndex().correctAnswer(answer)) {
         this.score++; //aumento el score
+        scoreOfUser = this.score;
       }
+
       return this.questionIndex++;
     }
   }
@@ -85,7 +135,7 @@ window.addEventListener("DOMContentLoaded", () => {
     choicesForUser(choices, callback) {
       const listOfAnswers = document.getElementById("list-answers");
       // limpio el html para que no me acumule las respuestas cada vez que selecciono
-      listOfAnswers.innerText = '';
+      listOfAnswers.innerText = "";
 
       for (let i = 0; i < choices.length; i++) {
         const button = document.createElement("button");
@@ -99,6 +149,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+
   const scorePage = (htmlVision, trivia) => {
     if (trivia.endOfTrivia()) {
       showScore(trivia.score); // Llamada a la función showScore directamente
@@ -107,21 +158,26 @@ window.addEventListener("DOMContentLoaded", () => {
       htmlVision.questionsForUser(trivia.getQuestionIndex().text);
 
       // Cargo las opciones y manejo de la elección del usuario
-      htmlVision.choicesForUser(trivia.getQuestionIndex().choices, (actualChoice) => {
-        trivia.guess(actualChoice); // para la opción elegida por el usuario 
-        scorePage(htmlVision, trivia); // vuelvo a cargar todo llamando a la función
-      });
+      htmlVision.choicesForUser(
+        trivia.getQuestionIndex().choices,
+        (actualChoice) => {
+          trivia.guess(actualChoice); // para la opción elegida por el usuario
+          scorePage(htmlVision, trivia); // vuelvo a cargar todo llamando a la función
+        }
+      );
     }
   };
 
   /*Funcion para mostrar el puntaje, creando un h2 que lo carga en el HTML*/
   const showScore = (score) => {
-    const endTrivia = `<h1 class="score-title">SCORE: ${score}</h1>`;
-    const elementOfHTMLscore = document.getElementById('gameQuestion');
+    const endTrivia = `<h1 class="score-title">TU PUNTAJE ES... </h1>
+                              <h2 class="score-number">${score}</h2>`;
+    const elementOfHTMLscore = document.getElementById("gameQuestion");
     elementOfHTMLscore.innerHTML = endTrivia;
+    saveScoreLocalStorage(scoreOfUser);
   };
 
-  /*Funcion para desarrollar la trivia*/
+  /*Funcion para el desarrollo de la trivia*/
   const developmentOfTrivia = () => {
     const trivia = new Trivia(arrayOfQuestions);
     const htmlVision = new HtmlVision();
@@ -129,8 +185,12 @@ window.addEventListener("DOMContentLoaded", () => {
     scorePage(htmlVision, trivia);
   };
 
-  //Llamo a la funcion
-  developmentOfTrivia();
-});
+  /*Funcion para guardar el puntaje en el LocalStorage*/
+  const saveScoreLocalStorage = (score) => {
+    localStorage.setItem("PUNTAJE", JSON.stringify(score));
+  };
 
-console.log('Hola Damian')
+
+  developmentOfTrivia();
+  console.log('Hola Damian')
+});
