@@ -34,7 +34,7 @@ window.addEventListener("DOMContentLoaded", () => {
     {
       question:
         'En el anime "My Hero Academia", ¿cuál es el nombre del profesor conocido como "All Might"?',
-      choices: ["Izuku Midoriya", "Shoto Todoroki", "Toshinori Yagi"],
+      choices: ["Yagi Toshinori", "Shoto Todoroki", "Toshinori Yagi"],
       answer: "Toshinori Yagi",
     },
     {
@@ -149,7 +149,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-
+  /*Funcion para mostrar el puntaje*/
   const scorePage = (htmlVision, trivia) => {
     if (trivia.endOfTrivia()) {
       showScore(trivia.score); // Llamada a la función showScore directamente
@@ -190,7 +190,5 @@ window.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("PUNTAJE", JSON.stringify(score));
   };
 
-
   developmentOfTrivia();
-  console.log('Hola Damian')
 });
