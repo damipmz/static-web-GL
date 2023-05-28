@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 window.addEventListener("DOMContentLoaded", () => {
   //Creo el objeto con los datos para el juego
   const gameQuestionsData = [
@@ -134,7 +133,4 @@ window.addEventListener("DOMContentLoaded", () => {
   developmentOfTrivia();
 });
 
-
-=======
 console.log('Hola Damian')
->>>>>>> StaticWeb-v4
