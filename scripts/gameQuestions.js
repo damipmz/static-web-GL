@@ -7,14 +7,12 @@ window.addEventListener("DOMContentLoaded", () => {
       choices: ["Naruto", "One Piece", "One Punch Man"],
       answer: "One Piece",
     },
-
     {
       question:
         'En el anime "Naruto", ¿cuál es el nombre del mejor amigo y eterno rival de Naruto Uzumaki?',
       choices: ["Sasuke Uchiha", "Kakashi Hatake", "Jiraiya", "Saitama"],
       answer: "Sasuke Uchiha",
     },
-
     {
       question:
         '¿Cuál es el nombre del protagonista del anime "Attack on Titan" ("Shingeki no Kyojin" en japonés)?',
@@ -25,6 +23,7 @@ window.addEventListener("DOMContentLoaded", () => {
       question:
         '¿En el anime "Attack on Titan", ¿cuál es el nombre del escuadrón de élite que se encarga de enfrentar a los titanes?',
       choices: [
+        "Fuerzas especiales Ginyu",
         "Escuadrón de Reconocimiento",
         "Escuadrón de Maniobras Tridimensionales",
         "Escuadrón de Operaciones Especiales",
@@ -34,7 +33,7 @@ window.addEventListener("DOMContentLoaded", () => {
     {
       question:
         'En el anime "My Hero Academia", ¿cuál es el nombre del profesor conocido como "All Might"?',
-      choices: ["Izuku Midoriya", "Shoto Todoroki", "Toshinori Yagi"],
+      choices: ["Yagi Toshinori", "Shoto Todoroki", "Toshinori Yagi"],
       answer: "Toshinori Yagi",
     },
     {
@@ -58,13 +57,13 @@ window.addEventListener("DOMContentLoaded", () => {
     {
       question:
         '¿Cuál es el nombre del protagonista masculino en el anime "My Hero Academia"?',
-      choices: ["Izuku Midoriya", "Shoto Todoroki", "Katsuki Bakugo"],
+      choices: ["Shoto Todoroki", "Katsuki Bakugo", "Izuku Midoriya"],
       answer: "Izuku Midoriya",
     },
     {
       question:
         'En el anime "Fullmetal Alchemist: Brotherhood", ¿cuál es el nombre del protagonista principal?',
-      choices: ["Edward Elric", "Roy Mustang", "Alphonse Elric"],
+      choices: ["Edward Elric", "Alphonse Elric", "Roy Mustang"],
       answer: "Alphonse Elric",
     },
   ];
@@ -149,7 +148,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-
+  /*Funcion para mostrar el puntaje*/
   const scorePage = (htmlVision, trivia) => {
     if (trivia.endOfTrivia()) {
       showScore(trivia.score); // Llamada a la función showScore directamente
@@ -170,11 +169,22 @@ window.addEventListener("DOMContentLoaded", () => {
 
   /*Funcion para mostrar el puntaje, creando un h2 que lo carga en el HTML*/
   const showScore = (score) => {
-    const endTrivia = `<h1 class="score-title">TU PUNTAJE ES... </h1>
-                              <h2 class="score-number">${score}</h2>`;
-    const elementOfHTMLscore = document.getElementById("gameQuestion");
-    elementOfHTMLscore.innerHTML = endTrivia;
-    saveScoreLocalStorage(scoreOfUser);
+    if (score <= 5) {
+      const endTrivia = `<h1 class="score-title">TU PUNTAJE ES... </h1>
+                              <h2 class="score-number-bad">${score}.</h2>
+                              <h3 class="score-number-bad">mejor suerte la proxima.</h3>`;
+      const elementOfHTMLscore = document.getElementById("gameQuestion");
+      elementOfHTMLscore.innerHTML = endTrivia;
+      saveScoreLocalStorage(scoreOfUser);
+    } else {
+      const endTrivia = `<h1 class="score-title">TU PUNTAJE ES... </h1>
+                              <h2 class="score-number">${score}</h2>
+                              <h3 class="score-number">¡BIEN HECHO!</h3>`;
+      const elementOfHTMLscore = document.getElementById("gameQuestion");
+      elementOfHTMLscore.innerHTML = endTrivia;
+      saveScoreLocalStorage(scoreOfUser);
+
+    }
   };
 
   /*Funcion para el desarrollo de la trivia*/
@@ -190,7 +200,5 @@ window.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("PUNTAJE", JSON.stringify(score));
   };
 
-
   developmentOfTrivia();
-  console.log('Hola Damian')
 });
