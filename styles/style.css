@@ -71,6 +71,9 @@ img {
     margin: 0;
   }
 
+  a {
+    text-decoration: none;
+  }
 
 
 
@@ -107,6 +110,10 @@ img {
   align-items: center;
 }
 
+.footer img {
+  width: 25px;
+  height: 25px;
+}
 
 
 /* Css del index*/
