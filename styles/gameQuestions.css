@@ -143,7 +143,19 @@ header {
     color: #e305cd;
     mix-blend-mode: screen;
     animation-name: fade-in;
-    animation-duration: 7s;
+    animation-duration: 9s;
+}
+
+.score-number-bad {
+    font-family: "Roboto", sans-serif;
+    margin-top: 1%;
+    font-size: 4rem;
+    margin: 0;
+    color: #e30505;
+    mix-blend-mode: screen;
+    animation-name: fade-in;
+    animation-duration: 5s;
+
 }
 
 @keyframes fade-in {
@@ -152,7 +164,7 @@ header {
     }
 
     to {
-        opacity: 3;
+        opacity: 1;
     }
 }
 
