@@ -68,7 +68,7 @@ img {
   font-weight: normal;
   margin: 0;
 }
-
+/*
     font-family: "Bangers", cursive;
     color: var(--color-fonts-2);
     filter: drop-shadow(1px 1px 0.1px var(--color-fonts-1));
@@ -76,7 +76,7 @@ img {
     font-weight: normal;
     margin: 0;
   }
-
+*/
   a {
     text-decoration: none;
   }
@@ -134,6 +134,7 @@ img {
 
 .github-icon {
   background-image: url(/assets/logos/GitHub-logo.png);
+}
 .footer img {
   width: 25px;
   height: 25px;
