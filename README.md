@@ -1,5 +1,5 @@
 <h1 align="center">ANIMATE quiz game</h1>
-_Welcome to the Anime Quiz Games repository! This project is a static website that offers two engaging quiz games related to anime._
+__Welcome to the Anime Quiz Games repository! This project is a static website that offers two engaging quiz games related to anime.__
 
 ## About the Project
 The Anime Quiz Games project consists of three HTML files: index.html, game1.html, and game2.html. The index.html file serves as the main page of the website, providing an overview of the available games and allowing users to choose which quiz they want to play.
