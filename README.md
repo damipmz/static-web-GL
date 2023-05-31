@@ -1,9 +1,9 @@
 <h1 align="center">ANIMATE quiz game</h1>
 
-Welcome to the Anime Quiz Games repository! This project is a static website that offers two engaging quiz games related to anime
+Welcome to the ANIMATE Quiz Games repository! This project is a static website that offers two engaging quiz games related to anime
 
 ## About the Project
-The Anime Quiz Games project consists of three HTML files: index.html, game1.html, and game2.html. The index.html file serves as the main page of the website, providing an overview of the available games and allowing users to choose which quiz they want to play.
+The Anime Quiz Games project consists of three HTML files: index.html, gameImages.html, and gameQuestions.html. The index.html file serves as the main page of the website, providing an overview of the available games and allowing users to choose which quiz they want to play.
 
 Each game has its own dedicated HTML file (game1.html and game2.html) that contains the questions, options, and scoring logic specific to that game. The games are designed to test your knowledge of various anime series, characters, and trivia.
 
@@ -17,7 +17,6 @@ To play the Anime Quiz Games, follow these steps:
 - Enjoy the quiz and challenge yourself to improve your anime knowledge!
 
 ## Built with
-The Anime Quiz Games project was built using the following technologies:
 - **HTML**
 - **CSS**
 - **JavaScript**
