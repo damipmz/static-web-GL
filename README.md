@@ -22,7 +22,7 @@ The Anime Quiz Games project was built using the following technologies:
 - **JavaScript**
 
 ## Contributions
-Contributions to the Anime Quiz Games project are welcome! If you would like to contribute, please follow these steps:
+Contributions to the ANIMATE Quiz Games project are welcome! If you would like to contribute, please follow these steps:
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
 3. Make your changes and commit them with descriptive messages.
