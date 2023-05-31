@@ -119,6 +119,7 @@ header {
 }
 
 #question {
+    letter-spacing: .4mm;
     background-color: #20203fa6;
     border: 2px solid #fafafa;
     margin: 2em;
