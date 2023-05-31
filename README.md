@@ -1,5 +1,5 @@
-# ANIMATE quiz game
-Welcome to the Anime Quiz Games repository! This project is a static website that offers two engaging quiz games related to anime.
+<h1 align="center">ANIMATE quiz game</h1>
+_Welcome to the Anime Quiz Games repository! This project is a static website that offers two engaging quiz games related to anime._
 
 ## About the Project
 The Anime Quiz Games project consists of three HTML files: index.html, game1.html, and game2.html. The index.html file serves as the main page of the website, providing an overview of the available games and allowing users to choose which quiz they want to play.
@@ -15,19 +15,19 @@ To play the Anime Quiz Games, follow these steps:
 - After answering all the questions, you will see your final score.
 - Enjoy the quiz and challenge yourself to improve your anime knowledge!
 
-## Technologies Used
+## Built with
 The Anime Quiz Games project was built using the following technologies:
-**HTML**: The structure and layout of the web pages.
-**CSS**: Used to style the web pages and make them visually appealing.
-**JavaScript**: Implemented the quiz logic and interactivity.
+- **HTML**
+- **CSS**
+- **JavaScript**
 
 ## Contributions
 Contributions to the Anime Quiz Games project are welcome! If you would like to contribute, please follow these steps:
-- Fork the repository.
-- Create a new branch for your feature or bug fix.
-- Make your changes and commit them with descriptive messages.
-- Push your changes to your forked repository.
-- Open a pull request, explaining the changes you made.
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with descriptive messages.
+4. Push your changes to your forked repository.
+5. Open a pull request, explaining the changes you made.
 
 ## License
 Feel free to use, modify, and distribute the code for personal and commercial purposes.
@@ -35,4 +35,4 @@ Feel free to use, modify, and distribute the code for personal and commercial pu
 ## Contact
 If you have any questions or suggestions regarding the ANIMATE Quiz Games project, please feel free to contact us. You can reach us by opening an issue on this repository.
 
-__Enjoy playing the **ANIMATE** Quiz Games! Have fun and test your anime knowledge__
+_Enjoy playing the **ANIMATE** Quiz Games! Have fun and test your anime knowledge_
