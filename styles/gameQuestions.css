@@ -37,7 +37,7 @@ body {
     background-position: center;
     height: 100vh;
     width: 100%;
-    margin-left: auto;
+    margin: auto;
 }
 
 /* Respuestas */
@@ -78,8 +78,7 @@ header {
 #navbar {
     font-family: "Roboto", sans-serif;
     text-align: left;
-    width: 200px;
-    padding-left: 2em;
+    padding-left: 1em;
     animation-name: fade-in;
     animation-duration: 2s;
     transition: .3s;
@@ -90,10 +89,11 @@ header {
     text-decoration: none;
     margin-bottom: 10px;
     color: #fafafa;
+    
 }
 
 #navbar:hover {
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 /* Main */
@@ -110,6 +110,8 @@ header {
 
 /* Juego en si */
 #gameQuestion {
+    padding-top: 10rem;
+    width: 100px;
     background-color: transparent;
     margin: 2em;
     text-align: center;
@@ -136,9 +138,11 @@ header {
 }
 
 .score-number {
+    padding-left: 25%;
+    width: 200px;
     font-family: "Roboto", sans-serif;
     margin-top: 1%;
-    font-size: 4rem;
+    font-size: 2rem;
     margin: 0;
     color: #e305cd;
     mix-blend-mode: screen;
@@ -147,9 +151,11 @@ header {
 }
 
 .score-number-bad {
+    padding-left: 25%;
+    width: 200px;
     font-family: "Roboto", sans-serif;
     margin-top: 1%;
-    font-size: 4rem;
+    font-size: 2rem;
     margin: 0;
     color: #e30505;
     mix-blend-mode: screen;

@@ -68,20 +68,10 @@ img {
   font-weight: normal;
   margin: 0;
 }
-/*
-    font-family: "Bangers", cursive;
-    color: var(--color-fonts-2);
-    filter: drop-shadow(1px 1px 0.1px var(--color-fonts-1));
-    font-size: 5rem;
-    font-weight: normal;
-    margin: 0;
-  }
-*/
+
   a {
     text-decoration: none;
   }
-
-
 
 /* Main */
 .main {
