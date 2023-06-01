@@ -172,14 +172,14 @@ window.addEventListener("DOMContentLoaded", () => {
     if (score <= 5) {
       const endTrivia = `<h1 class="score-title">TU PUNTAJE ES... </h1>
                               <h2 class="score-number-bad">${score}.</h2>
-                              <h3 class="score-number-bad">mejor suerte la proxima.</h3>`;
+                              <h3 class="score-number-bad">mejor suerte la proxima😔</h3>`;
       const elementOfHTMLscore = document.getElementById("gameQuestion");
       elementOfHTMLscore.innerHTML = endTrivia;
       saveScoreLocalStorage(scoreOfUser);
     } else {
       const endTrivia = `<h1 class="score-title">TU PUNTAJE ES... </h1>
                               <h2 class="score-number">${score}</h2>
-                              <h3 class="score-number">¡BIEN HECHO!</h3>`;
+                              <h3 class="score-number">¡BIEN HECHO!🎉</h3>`;
       const elementOfHTMLscore = document.getElementById("gameQuestion");
       elementOfHTMLscore.innerHTML = endTrivia;
       saveScoreLocalStorage(scoreOfUser);
