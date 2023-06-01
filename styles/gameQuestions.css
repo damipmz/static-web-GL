@@ -43,13 +43,14 @@ body {
 /* Respuestas */
 button {
     margin: 1em;
-    color: #fafafa;
+    color: #FFD369;
     border: 1px solid #fafafa;
     width: 25em;
     height: 2.3em;
-    background-color: #20203fa6;
+    background-color:rgba(0, 0, 0, 0.5);
     transition: .5s;
     border: 2px solid;
+    letter-spacing: 2px;
 }
 
 .answer:hover {
@@ -68,10 +69,9 @@ header {
 
 .tittleQuestions___heartBeat {
     font-family: "Bangers", cursive;
-    color: rgb(85, 228, 185);
-    filter: drop-shadow(1px 2px 0.1px var(--color-fonts-pink));
+    color: #393E46;
+    filter: drop-shadow(2px 2px 0.1px #FFD369);
     font-size: 4rem;
-
 }
 
 /* navbar */
@@ -119,11 +119,13 @@ header {
 }
 
 #question {
-    background-color: #20203fa6;
-    border: 2px solid #fafafa;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #FFD369;
     margin: 2em;
     padding: 2%;
     font-weight: bold;
+    color: #FFD369;
+    line-height: 2;
 }
 
 /* Puntaje del usuario */

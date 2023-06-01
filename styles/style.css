@@ -38,6 +38,7 @@ img {
   background-color: rgba(0, 0, 0, 0.5);
   border: 2px solid #fafafa;
   color: var(--color-fonts-2);
+  letter-spacing: 1.5px;
 
 }
 
@@ -138,7 +139,6 @@ img {
   background: rgba(0, 0, 0, 0.8) url(/assets/backgroundIndex.jpg);
   background-blend-mode: darken;
   background-size: cover;
-  background-size: 100% 100%;
   /* Estire la imagen para que ocupe toda la pantalla, a cambiar en futuro, queda mal */
   background-repeat: no-repeat;
   background-position: center;
