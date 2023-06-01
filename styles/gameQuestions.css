@@ -119,8 +119,9 @@ header {
 }
 
 #question {
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 2px solid #FFD369;
+    letter-spacing: .4mm;
+    background-color: #20203fa6;
+    border: 2px solid #fafafa;
     margin: 2em;
     padding: 2%;
     font-weight: bold;
