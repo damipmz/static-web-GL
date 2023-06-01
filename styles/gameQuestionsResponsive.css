@@ -2,19 +2,22 @@
 
     #index-body {
         background-color: rgba(114, 75, 75, 0.418);
-        width: auto;
+        padding: 0;
     }
 
     #gameQuestion {
-        margin-left: 10px;
-        padding: 0;
-        font-size: 1rem;
+        height: auto;
+        width: auto;
     }
+
 
     .tittleQuestions___heartBeat {
         color: #e305cdc2;
         filter: drop-shadow(1px 2px 0.1px var(--color-fonts-cyan));
         font-size: 2.5rem;
+    }
+    .answer{
+        width: 200px;
     }
 
     .answer:hover {
@@ -25,7 +28,7 @@
     }
 
     .score-number {
-        padding-left: 25%;
+        padding-left: 10%;
         font-family: "Roboto", sans-serif;
         margin-top: 1%;
         font-size: 2rem;
@@ -34,10 +37,12 @@
         mix-blend-mode: difference;
         animation-name: fade-in;
         animation-duration: 9s;
+        height: auto;
+        width: auto;
     }
 
     .score-number-bad {
-        padding-left: 25%;
+        padding-left: 10%;
         font-family: "Roboto", sans-serif;
         margin-top: 1%;
         font-size: 1.5rem;
@@ -46,5 +51,7 @@
         mix-blend-mode: hard-light;
         animation-name: fade-in;
         animation-duration: 5s;
+        height: auto;
+        width: auto;
     }
 }
