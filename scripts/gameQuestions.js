@@ -123,7 +123,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   /*Creo otra clase para mostrar las preguntas y opciones en el HTML */
   class HtmlVision {
-    constructor() { }
+    constructor() {}
 
     questionsForUser(text) {
       const titleOfQuestion = document.getElementById("question");
@@ -182,7 +182,6 @@ window.addEventListener("DOMContentLoaded", () => {
       const elementOfHTMLscore = document.getElementById("gameQuestion");
       elementOfHTMLscore.innerHTML = endTrivia;
       saveScoreLocalStorage(scoreOfUser);
-
     }
   };
 

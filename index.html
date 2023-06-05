@@ -1,62 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Link de la biblioteca usada para la animacion -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INICIO</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles/style.css" />
-  <!-- Link de la biblioteca usada para la animacion -->  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>INICIO</title>
-</head>
+  <body class="body" id="index-body">
+    <header class="header">
+      <h1 class="animate__heartBeat">ANIMATE</h1>
+    </header>
 
-<body class="body" id="index-body">
-
-  <header class="header">
-    <h1 class="animate__heartBeat">ANIMATE</h1>
-  </header>
-
-  <main class="main" id="index-main" >
-
-        <p class="subtitle" id="subtitle-games">¡A jugar!</p>
-        <section id="game1">
+    <main class="main" id="index-main">
+      <p class="subtitle" id="subtitle-games">¡A jugar!</p>
+      <section id="game1">
         <p class="subtitle button">Descubre la imagen</p>
-        <button class="button-link" id="button-game-images">Adivina la imagen</button>
+        <button class="button-link" id="button-game-images">
+          Adivina la imagen
+        </button>
       </section>
       <section id="game2">
         <p class="subtitle button">Resuelve la pregunta</p>
-        <button class="button-link" id="button-game-questions">Descubre el personaje</button>
+        <button class="button-link" id="button-game-questions">
+          Descubre el personaje
+        </button>
       </section>
 
-    
+      <section class="curiosities">
+        <h3>Sabias que:</h3>
 
-    <section class="curiosities">
-      <h3>Sabias que:</h3>
-      
-      <article class="curiosity">
-        <p id="curiosity-index">
-          En el anime "One Piece", el creador Eiichiro Oda reveló en una entrevista que si él fuera un personaje de la serie, sería un pirata y su habilidad especial sería dibujar rápido.
-        </p>
-      </article>
+        <article class="curiosity">
+          <p id="curiosity-index">
+            En el anime "One Piece", el creador Eiichiro Oda reveló en una
+            entrevista que si él fuera un personaje de la serie, sería un pirata
+            y su habilidad especial sería dibujar rápido.
+          </p>
+        </article>
+      </section>
+    </main>
 
-     </section>
+    <footer class="footer">
+      <ul>
+        <li>
+          <a
+            class="linkedin-icon"
+            href="https://www.linkedin.com/in/damianponcem/"
+            target="_blank"
+            ><img src="/assets/logos/LinkedIn-logo.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a
+            class="github-icon"
+            href="https://github.com/damipmz/static-web-GL"
+            target="_blank"
+            ><img src="/assets/logos/GitHub-logo.png" alt=""
+          /></a>
+        </li>
+      </ul>
+    </footer>
 
-  </main>
-
-  <footer class="footer">
-    <ul>
-      <li>
-        <a class="linkedin-icon" href="https://www.linkedin.com/in/damianponcem/" target="_blank"><img src="/assets/logos/LinkedIn-logo.png" alt=""></a>
-      </li>
-      <li>
-        <a class="github-icon" href="https://github.com/damipmz/static-web-GL" target="_blank"><img src="/assets/logos/GitHub-logo.png" alt=""></a>
-      </li>
-    </ul>
-  </footer>
-
-  <script src="/scripts/index.js"></script>
-</body>
-
+    <script src="/scripts/index.js"></script>
+  </body>
 </html>

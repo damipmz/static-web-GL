@@ -1,7 +1,8 @@
 const listOfQuestions = [
   {
     id: 1,
-    image: "https://i.pinimg.com/originals/6e/ca/e8/6ecae8cc2c4cabeb7f553c28363b7507.png",
+    image:
+      "https://i.pinimg.com/originals/6e/ca/e8/6ecae8cc2c4cabeb7f553c28363b7507.png",
     answers: {
       answer1: {
         answerAnime: "One Piece",
@@ -133,8 +134,7 @@ const listOfQuestions = [
   },
   {
     id: 8,
-    image:
-      "https://i.ytimg.com/vi/PDd7sh-qkYs/maxresdefault.jpg",
+    image: "https://i.ytimg.com/vi/PDd7sh-qkYs/maxresdefault.jpg",
     answers: {
       answer1: {
         answerAnime: "Soul Eater",
@@ -189,7 +189,6 @@ const listOfQuestions = [
     },
   },
 ];
-
 
 const questionImage = document.getElementById("question-image");
 const numberQuestion = document.getElementById("numberQuestion-image");
@@ -247,10 +246,8 @@ const questionTrueOrFalse = (questionsIndex, event, listQuestions) => {
       listQuestions[questionsIndex].answers[`answer${iterator}`].answerValor ===
         true
     ) {
-      
       points += 1;
-    }else{
-      
+    } else {
     }
   }
 };
@@ -275,9 +272,7 @@ allButtonsImage.forEach((button) => {
         window.location.assign("./pointsGameImages.html");
       }, DELAY_MS_PAGE);
 
-      localStorage.setItem('pointsGameImages',JSON.stringify(points))
-
+      localStorage.setItem("pointsGameImages", JSON.stringify(points));
     }
   });
 });
-

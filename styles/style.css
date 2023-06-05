@@ -38,7 +38,6 @@ img {
   border: 2px solid #fafafa;
   color: var(--color-fonts-2);
   letter-spacing: 1.5px;
-
 }
 
 .question {
@@ -66,9 +65,9 @@ img {
   margin: 0;
 }
 
- a {
+a {
   text-decoration: none;
- }
+}
 
 /* Main */
 .main {
@@ -329,7 +328,6 @@ img {
   .button {
     font-size: 3vh;
     text-transform: normal;
-    
   }
 
   .button-link {
