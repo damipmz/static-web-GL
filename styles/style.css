@@ -37,6 +37,8 @@ img {
   background-color: rgba(0, 0, 0, 0.5);
   border: 2px solid #fafafa;
   color: var(--color-fonts-2);
+  letter-spacing: 1.5px;
+
 }
 
 .question {
@@ -64,9 +66,9 @@ img {
   margin: 0;
 }
 
-a {
+ a {
   text-decoration: none;
-}
+ }
 
 /* Main */
 .main {
@@ -129,7 +131,6 @@ a {
   background: rgba(0, 0, 0, 0.8) url(/assets/backgroundIndex.jpg);
   background-blend-mode: darken;
   background-size: cover;
-  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
