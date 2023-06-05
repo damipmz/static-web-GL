@@ -89,7 +89,7 @@ header {
     text-decoration: none;
     margin-bottom: 10px;
     color: #fafafa;
-    
+
 }
 
 #navbar:hover {
@@ -209,4 +209,63 @@ header {
 
 .github-icon {
     background-image: url(/assets/logos/GitHub-logo.png);
+}
+
+@media only screen and (max-width: 600px) {
+
+    #index-body {
+        background-color: rgba(114, 75, 75, 0.418);
+        padding: 0;
+    }
+
+    #gameQuestion {
+        height: auto;
+        width: auto;
+    }
+
+
+    .tittleQuestions___heartBeat {
+        color: #e305cdc2;
+        filter: drop-shadow(1px 2px 0.1px var(--color-fonts-cyan));
+        font-size: 2.5rem;
+    }
+
+    .answer {
+        width: 200px;
+    }
+
+    .answer:hover {
+        border-color: rgb(85, 228, 185);
+        transform: scale(1.1);
+        font-weight: bold;
+        color: #e305cd;
+    }
+
+    .score-number {
+        padding-left: 10%;
+        font-family: "Roboto", sans-serif;
+        margin-top: 1%;
+        font-size: 2rem;
+        margin: 0;
+        color: #b4b4b4;
+        mix-blend-mode: difference;
+        animation-name: fade-in;
+        animation-duration: 9s;
+        height: auto;
+        width: auto;
+    }
+
+    .score-number-bad {
+        padding-left: 10%;
+        font-family: "Roboto", sans-serif;
+        margin-top: 1%;
+        font-size: 1.5rem;
+        margin: 0;
+        color: #ff00ff;
+        mix-blend-mode: hard-light;
+        animation-name: fade-in;
+        animation-duration: 5s;
+        height: auto;
+        width: auto;
+    }
 }
