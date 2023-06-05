@@ -47,7 +47,6 @@ let index=0
 paragraphIndex.textContent = curiosities[index].curiosity
 const sumNum = () => {
     index=(index+1)%6
-    console.log(index)
     return index
 }
 setInterval(sumNum, DELAYMS);

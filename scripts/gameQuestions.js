@@ -112,7 +112,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
     //Para cuando el usuario seleccione una opcion, cuando el usuario seleccione, me devuelve el indice de la seleccion.
     guess(answer) {
-      console.log(answer);
       if (this.getQuestionIndex().correctAnswer(answer)) {
         this.score++; //aumento el score
         scoreOfUser = this.score;

@@ -207,7 +207,6 @@ const DELAY_MS_PAGE = 600;
 
 /** Funcion que recarga las preguntas */
 const loadNewQuestion = (questionsIndex, listButtons, listQuestions) => {
-  console.log("Question iterator:", questionsIndex);
   //Animacion para que le de tiempo a cargar a la imagen
   listButtons.forEach((button) => {
     button.classList.add("disappear");
@@ -248,10 +247,10 @@ const questionTrueOrFalse = (questionsIndex, event, listQuestions) => {
       listQuestions[questionsIndex].answers[`answer${iterator}`].answerValor ===
         true
     ) {
-      console.log("respuesta correcta +1 punto");
+      
       points += 1;
     }else{
-      console.log('era una respuesta normal')
+      
     }
   }
 };
@@ -279,9 +278,6 @@ allButtonsImage.forEach((button) => {
       localStorage.setItem('pointsGameImages',JSON.stringify(points))
 
     }
-    console.log("hiciste un click");
-    console.log("total de puntos", points);
-    console.log("-----");
   });
 });
 
