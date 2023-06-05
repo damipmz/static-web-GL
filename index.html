@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles/style.css" />
   <!-- Link de la biblioteca usada para la animacion -->  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>INICIO</title>
 </head>
 
@@ -19,21 +20,24 @@
 
   <main class="main" id="index-main" >
 
-    <section class="games">
-        <p class="subtitle" >¡A jugar!</p>
-        <p class="subtitle-button">Una imagen, una respuesta correcta, adivina a quien pertenece</p>
+        <p class="subtitle" id="subtitle-games">¡A jugar!</p>
+        <section id="game1">
+        <p class="subtitle button">Una imagen, una respuesta correcta, adivina a quien pertenece</p>
         <button class="button-link" id="button-game-images">Adivina la imagen</button>
-        <p class="subtitle-button">Tendras una frase y tienes que saber de quien se trata!</p>
+      </section>
+      <section id="game2">
+        <p class="subtitle button">Tendras una frase y tienes que saber de quien se trata!</p>
         <button class="button-link" id="button-game-questions">Descubre el personaje</button>
+      </section>
 
-    </section>
+    
 
     <section class="curiosities">
       <h3>Sabias que:</h3>
       
       <article class="curiosity">
-        <p>
-          Naruto, One Piece y Bleach son llamados los tres grandes debido a la cantidad de copias que vendieron
+        <p id="curiosity-index">
+          En el anime "One Piece", el creador Eiichiro Oda reveló en una entrevista que si él fuera un personaje de la serie, sería un pirata y su habilidad especial sería dibujar rápido.
         </p>
       </article>
 
