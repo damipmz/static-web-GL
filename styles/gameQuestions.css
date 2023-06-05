@@ -78,7 +78,7 @@ header {
 #navbar {
     font-family: "Roboto", sans-serif;
     text-align: left;
-    padding-left: 1em;
+    padding-left: 2em;
     animation-name: fade-in;
     animation-duration: 2s;
     transition: .3s;
@@ -111,7 +111,6 @@ header {
 /* Juego en si */
 #gameQuestion {
     padding-top: 10rem;
-    width: 100px;
     background-color: transparent;
     margin: 2em;
     text-align: center;
