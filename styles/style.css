@@ -5,9 +5,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
-  --color-fonts-1: #EEEEEE;
-  --color-fonts-2: #FFD369;
-  --color-fonts-3: #393E46;
+  --color-fonts-1: #eeeeee;
+  --color-fonts-2: #ffd369;
+  --color-fonts-3: #393e46;
 }
 
 html {
@@ -28,13 +28,12 @@ body {
 
 img {
   max-width: 100%;
-
 }
 
 /*Edito el estilo de las respuestas*/
 .answer {
-  width: 300px;
-  height: 50px;
+  width: 80%;
+  height: 7%;
   background-color: rgba(0, 0, 0, 0.5);
   border: 2px solid #fafafa;
   color: var(--color-fonts-2);
@@ -43,10 +42,9 @@ img {
 }
 
 .question {
-  width: 300px;
-  height: 200px;
+  width: 80%;
+  height: 30%;
   border: 2px solid #fafafa;
-
 }
 
 /* Body */
@@ -57,11 +55,9 @@ img {
   align-items: center;
   height: 12%;
   justify-content: center;
-
 }
 
 .animate__heartBeat {
-
   font-family: "Bangers", cursive;
   color: var(--color-fonts-2);
   filter: drop-shadow(1px 1px 0.1px var(--color-fonts-1));
@@ -70,22 +66,27 @@ img {
   margin: 0;
 }
 
-  a {
-    text-decoration: none;
-  }
+ a {
+  text-decoration: none;
+ }
 
 /* Main */
 .main {
-  height: 82%;
-  padding: 1rem;
+  height: 80%;
+  padding: 1.3rem;
 }
 
 .subtitle {
-  font-size: 2rem;
+  font-size: 4vh;
   font-weight: bold;
   margin: 0;
 }
 
+.button {
+  font-size: 2vh;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
 /*Footer*/
 .footer {
   background-color: rgba(0, 0, 0, 0.8);
@@ -93,7 +94,10 @@ img {
   position: absolute;
   bottom: 0;
   margin-left: 0;
-  height: 6%;
+  height: 7%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .footer ul {
@@ -103,35 +107,23 @@ img {
   list-style-position: outside;
   justify-content: space-evenly;
   align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
+.footer li {
+  width: 7%;
+  height: 7%;
+}
 
 .footer a {
   padding: 0;
   text-decoration: none;
-  color: inherit;
   display: inline-flex;
-  width: 24px;
-  height: 24px;
-  /*background-image: url(/assets/logos/GitHub-logo.png); */
   background-repeat: no-repeat;
   background-size: cover;
-  vertical-align: middle;
 }
-
-.linkedin-icon {
-  background-image: url(/assets/logos/LinkedIn-logo.png);
-}
-
-.github-icon {
-  background-image: url(/assets/logos/GitHub-logo.png);
-}
-.footer img {
-  width: 25px;
-  height: 25px;
-
-}
-
 
 /* Css del index*/
 
@@ -139,7 +131,6 @@ img {
   background: rgba(0, 0, 0, 0.8) url(/assets/backgroundIndex.jpg);
   background-blend-mode: darken;
   background-size: cover;
-  /* Estire la imagen para que ocupe toda la pantalla, a cambiar en futuro, queda mal */
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -148,27 +139,14 @@ img {
 #index-main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 75% 1fr;
+  grid-template-rows: auto;
   text-align: center;
   color: #fafafa;
-
 }
-
-/* Games*/
-.games {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  justify-content: center;
-  gap: 20px;
-
-}
-
 
 .button-link {
-  width: 250px;
-  height: 50px;
+  width: 70%;
+  height: 30%;
   background-color: var(--color-fonts-3);
   border-radius: 10px;
   font-family: "Roboto", sans-serif;
@@ -176,7 +154,6 @@ img {
   font-weight: 500;
   font-size: 1rem;
 }
-
 
 #button-game-images {
   border: 1px solid var(--color-fonts-2);
@@ -188,15 +165,11 @@ img {
   color: var(--color-fonts-2);
 }
 
-
-
 /* Curiosities*/
 
 .curiosities {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 2rem;
-  font-size: small;
+  padding: 0rem;
+  font-size: 0.8rem;
 }
 
 .curiosities h3 {
@@ -208,4 +181,198 @@ img {
 .curiosity {
   border: 1px solid white;
   border-radius: 10px;
+  padding: 0.7rem;
+}
+
+@media (min-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * ::after * ::before * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    margin: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  /*Edito el estilo de las respuestas*/
+  .answer {
+    width: 40vw;
+    height: 7vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #fafafa;
+    color: var(--color-fonts-2);
+    font-size: 2.5vh;
+  }
+
+  .question {
+    width: 60vw;
+    height: 35vh;
+    border: 2px solid #fafafa;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Body */
+  /* Header*/
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 12%;
+    justify-content: center;
+  }
+
+  .animate__heartBeat {
+    font-family: "Bangers", cursive;
+    color: var(--color-fonts-2);
+    filter: drop-shadow(1px 1px 0.1px var(--color-fonts-1));
+    font-size: 7vw;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* Main */
+  .main {
+    height: 78%;
+    padding: 1rem;
+  }
+
+  .subtitle {
+    font-size: 4.5vw;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  /*Footer*/
+  .footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-left: 0;
+    height: 7%;
+  }
+
+  .footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    list-style-position: outside;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .footer li {
+    width: 2.7vw;
+    height: 2.7vw;
+  }
+
+  .footer a {
+    padding: 0;
+    text-decoration: none;
+  }
+
+  /* Css del index*/
+
+  #index-body {
+    background: rgba(0, 0, 0, 0.8) url(/assets/backgroundQueryIndex.webp);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* Main*/
+  #index-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 12% 60% 1fr;
+    text-align: center;
+    color: #fafafa;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #subtitle-games {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  #game1 {
+    grid-template-columns: 1/2;
+    grid-row: 2/3;
+    padding: 3vw;
+  }
+
+  #game2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 3vw;
+  }
+
+  .button {
+    font-size: 3vh;
+    text-transform: normal;
+  }
+
+  .button-link {
+    width: 100%;
+    height: 20%;
+    background-color: var(--color-fonts-3);
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 3.2vw;
+    margin-top: 2rem;
+    white-space: nowrap;
+  }
+
+  #button-game-images {
+    border: 1px solid var(--color-fonts-2);
+    color: var(--color-fonts-2);
+  }
+
+  #button-game-questions {
+    border: 1px solid var(--color-fonts-1);
+    color: var(--color-fonts-2);
+  }
+
+  /* Curiosities*/
+
+  .curiosities {
+    padding: 0;
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+
+  .curiosities h3 {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 3vh;
+  }
+
+  .curiosity {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0.7rem;
+    font-size: 2vh;
+  }
 }

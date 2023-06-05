@@ -18,25 +18,54 @@
 a{
     color: #fafafa;
     text-decoration: none;
+    
 }
 
-#home-points-image{
-    margin-top: 1rem;
-    font-size: 1.5rem;
-}
 
-img{
-    width: 300px;
-    height: 200px;
+
+
+#points-gif img{
+    width: 20vw;
+    height: 20vh;
 }
 
 .points{
     font-family: "Bangers", cursive;
     color: var(--color-fonts-2);
     filter: drop-shadow(1px 1px 0.1px var(--color-fonts-1));
-    font-size: 2rem;
+    font-size: 5vh;
 }
 
 .number{
-    font-size: 4rem;
+    font-size: 5vh;
+}
+
+@media (min-width:768px){
+
+    a{
+        color: #fafafa;
+        text-decoration: none;
+        
+    }
+    
+    #points-gif img{
+        width: 25vw;
+        height: 15vh;
+    }
+    
+    .points{
+        font-family: "Bangers", cursive;
+        color: var(--color-fonts-2);
+        filter: drop-shadow(1px 1px 0.1px var(--color-fonts-1));
+        font-size: 5vw;
+        margin-bottom: 0;
+    }
+    
+    .number{
+        font-size: 5vw;
+         margin-top: 0;
+         margin-bottom: 2rem;
+    }
+    
+
 }
